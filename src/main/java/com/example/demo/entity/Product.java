@@ -1,13 +1,12 @@
 package com.example.demo.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.envers.Audited;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 @Data
 @AllArgsConstructor
@@ -15,6 +14,8 @@ import lombok.NoArgsConstructor;
 @Builder
 @Entity
 @Table(name = "gn_product")
+@Audited
+@EntityListeners(AuditingEntityListener.class)
 public class Product {
     @Id
     @GeneratedValue
