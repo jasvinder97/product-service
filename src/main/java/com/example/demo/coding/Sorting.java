@@ -3,7 +3,7 @@ package com.example.demo.coding;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class Coding {
+public class Sorting {
 
     public static void main(String[] args) {
         int[] array = new int[]{1, 98, 32, 9, 23, 13, 6};
