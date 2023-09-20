@@ -11,7 +11,7 @@ public class ReverseArray {
     static void printArray(int[] inputArray) {
         int n = inputArray.length;
         for (int j : inputArray) {
-            System.out.println(j);
+            System.out.print(j + ",");
         }
     }
 
